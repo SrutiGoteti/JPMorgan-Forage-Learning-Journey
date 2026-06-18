@@ -1,4 +1,4 @@
-# JPMorgan-Forage-Learning-Journey
+# JPMorgan Forage Learning Journey
 
 This repository documents my learning while completing JPMorgan Chase's Software Engineering Virtual Job Simulation Program on Forage
 
