@@ -117,6 +117,41 @@ It starts the Spring Boot application and initializes all required components.
   
   TaskOneTests is the introductory verification test for the Midas Core project. Its purpose is to ensure that the Spring Boot    application starts successfully and that the application context loads without any configuration or dependency issues.
 
+### Step 4: Add required dependencies to pom.xxml
+
+| Dependency	                 | Group                     | Version |
+|------------------------------|---------------------------|---------|
+| spring-boot-starter-data-jpa | org.springframework.boot	 | 3.2.5   |
+| spring-boot-starter-web    	 | org.springframework.boot	 | 3.2.5   |
+| spring-kafka                 | org.springframework.kafka | 3.1.4   |
+| h2                           | com.h2database	           | 2.2.224 |
+| spring-boot-starter-test	   | org.springframework.boot	 | 3.2.5   |
+| spring-kafka-test            | org.springframework.kafka | 3.1.4   |
+| kafka (Testcontainers)	     | org.testcontainers	       | 1.19.1  |
+
+### Step 5: Update application.yml
+
+general:
+ kafka-topic: trader-updates
+
+### Step 6: Build and run the project
+
+mvn clean install
+mvn spring-boot:run
+
+### Step 7: Runt the task1 tests
+
+`mvn-Dtest=TaskOneTests test`
+
+### Step 8: Submit answer
+
+Paste the output between BEGIN and END as Task1 answer.
+
+
+
+
+
+
 
 
 
